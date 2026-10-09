@@ -1,0 +1,13 @@
+# Minimale Konfiguration für die Supabase CLI (lokale Entwicklung & Deploy).
+# Fehlende Werte ergänzt die CLI mit ihren Standardwerten.
+project_id = "musik-quiz"
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173"]
+# Spieler & Host melden sich anonym an – muss aktiv sein!
+enable_anonymous_sign_ins = true
+
+[functions.deezer]
+verify_jwt = true
